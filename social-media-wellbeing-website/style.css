@@ -1,0 +1,121 @@
+/* Basic reset and styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+nav button {
+  margin: 0 0.5rem;
+  background: #0077cc;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav button:hover {
+  background: #005fa3;
+}
+
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #004a99;
+}
+
+section p, section ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+section ul li {
+  margin-bottom: 0.75rem;
+}
+
+.call-to-action button {
+  background: #ff6347;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.call-to-action button:hover {
+  background: #e5533d;
+}
+
+footer {
+  background-color: rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.gallery figure {
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+}
+
+.gallery figcaption {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
